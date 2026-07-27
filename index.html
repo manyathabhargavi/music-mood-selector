@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🎧 Music Mood Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🎧 Music Mood Selector</h1>
+        <p class="description">
+            Choose your mood and discover the perfect music genre.
+        </p>
+        <img
+            src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700"
+            alt="Headphones and Music"
+            class="music-image"
+        >
+
+        <!-- Mood Buttons -->
+        <div class="button-container">
+
+            <button class="mood-btn" data-mood="study">
+                📚 Study
+            </button>
+
+            <button class="mood-btn" data-mood="relax">
+                😌 Relax
+            </button>
+
+            <button class="mood-btn" data-mood="workout">
+                💪 Workout
+            </button>
+
+            <button class="mood-btn" data-mood="happy">
+                😊 Happy
+            </button>
+
+        </div>
+
+        
+        <!-- Result Card -->
+<div id="result-card" class="result-card hidden">
+
+    <h2>Your Music Recommendation</h2>
+
+    <p>
+        <strong>Mood:</strong>
+        <span id="mood"></span>
+    </p>
+
+    <p>
+        <strong>Genre:</strong>
+        <span id="genre"></span>
+    </p>
+
+    <p>
+        <strong>Message:</strong>
+        <span id="message"></span>
+    </p>
+
+    <p id="emoji" class="emoji"></p>
+
+    <!-- Playlist Button -->
+    <a id="playlist-link"
+       href="#"
+       target="_blank"
+       class="playlist-btn">
+       🎵 Open Playlist
+    </a>
+
+</div>
+
+        <!-- Spotify Link -->
+        <div class="spotify-link">
+            <a href="https://open.spotify.com"
+               target="_blank">
+               🎵 Visit Spotify
+            </a>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
